@@ -59,3 +59,9 @@ function start()
     getPass();
 }
 window.onload = start;
+
+String.prototype.setChar = function(place, char)
+{
+    if(place > this.length - 1) return this.toString();
+    else return this.substr(0, place) + char + this.substr(place + 1);
+}
