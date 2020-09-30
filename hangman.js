@@ -5,3 +5,9 @@ var hiddenPass = "";
 var mistakes = 0;
 var yes = new Audio("sounds/yes.mp3");
 var no = new Audio("sounds/no.mp3");
+
+for(i=0; i<passLength; i++)
+{
+    if(pass.charAt(i)==" ") hiddenPass = hiddenPass + " ";
+    else hiddenPass = hiddenPass + "-";
+}
