@@ -5,3 +5,9 @@ body
     font-size: 28px;
     font-family: 'Inconsolata', monospace;
 }
+#container
+{
+    width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
