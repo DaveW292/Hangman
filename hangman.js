@@ -105,4 +105,8 @@ function check(nr)
     if(pass == hiddenPass)
     document.getElementById("keyboard").innerHTML = "That's right :) " + pass + " is the correct password!" +
     '<br/><br/><span class="reset" onclick="location.reload()">PLAY AGAIN?</span>';
+
+    if(mistakes>8)
+    document.getElementById("keyboard").innerHTML = "Wrong :( " + pass + " is the correct password!" +
+    '<br/><br/><span class="reset" onclick="location.reload()">PLAY AGAIN?</span>';
 }
