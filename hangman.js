@@ -65,3 +65,16 @@ String.prototype.setChar = function(place, char)
     if(place > this.length - 1) return this.toString();
     else return this.substr(0, place) + char + this.substr(place + 1);
 }
+
+function check(nr)
+{
+    var score = false;
+    for(i=0; i<passLength; i++)
+    {
+        if(pass.charAt(i) == letters[nr])
+        {
+            hiddenPass = hiddenPass.setChar(i, letters[nr]);
+            score = true;
+        }
+    }
+}
