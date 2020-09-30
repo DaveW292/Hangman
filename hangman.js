@@ -96,5 +96,9 @@ function check(nr)
         document.getElementById(element).style.border = "3px solid #C00000";
         document.getElementById(element).style.cursor = "default";
         document.getElementById(element).setAttribute("onclick",";");
+
+        mistakes++;
+        var picture = "img/p" + mistakes + ".jpg";
+        document.getElementById("gallows").innerHTML = '<img src="'+ picture +'" alt=""/>';
     }
 }
