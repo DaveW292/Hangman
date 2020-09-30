@@ -87,4 +87,14 @@ function check(nr)
         document.getElementById(element).style.cursor = "default";
         getPass();
     }
+    else
+    {
+        no.play();
+        var element = "char" + nr;
+        document.getElementById(element).style.background = "#330000";
+        document.getElementById(element).style.color = "#C00000";
+        document.getElementById(element).style.border = "3px solid #C00000";
+        document.getElementById(element).style.cursor = "default";
+        document.getElementById(element).setAttribute("onclick",";");
+    }
 }
