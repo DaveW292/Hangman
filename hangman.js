@@ -44,3 +44,18 @@ letters[22] = "V";
 letters[23] = "B";
 letters[24] = "N";
 letters[25] = "M";
+
+function start()
+{
+    var content = "";
+    for(i=0; i<26; i++)
+    {
+        var element = "char" + i;
+        content = content + '<div class="letter" onclick="check('+ i +')" id="'+ element +'">' + letters[i] + '</div>';
+        if(i==9) content = content + '<div style="clear:both;"></div>';
+        if(i==18) content = content + '<div style="clear:both;"></div>';
+    }
+    document.getElementById("keyboard").innerHTML = content;
+    getPass();
+}
+window.onload = start;
