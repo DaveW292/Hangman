@@ -11,3 +11,8 @@ for(i=0; i<passLength; i++)
     if(pass.charAt(i)==" ") hiddenPass = hiddenPass + " ";
     else hiddenPass = hiddenPass + "-";
 }
+
+function getPass()
+{
+    document.getElementById("board").innerHTML = hiddenPass;
+}
