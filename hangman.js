@@ -101,4 +101,8 @@ function check(nr)
         var picture = "img/p" + mistakes + ".jpg";
         document.getElementById("gallows").innerHTML = '<img src="'+ picture +'" alt=""/>';
     }
+
+    if(pass == hiddenPass)
+    document.getElementById("keyboard").innerHTML = "That's right :) " + pass + " is the correct password!" +
+    '<br/><br/><span class="reset" onclick="location.reload()">PLAY AGAIN?</span>';
 }
