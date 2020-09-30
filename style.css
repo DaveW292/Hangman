@@ -27,3 +27,12 @@ body
     min-height: 280px;
     margin: auto;
 }
+#keyboard
+{
+    width: 600px;
+    text-align: center;
+    min-height: 280px;
+    margin-top: 100px;
+    margin-left: auto;
+    margin-right: auto;
+}
